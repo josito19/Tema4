@@ -1,4 +1,4 @@
-package parte1;
+package colecciones2;
 
 import java.util.Scanner;
 
