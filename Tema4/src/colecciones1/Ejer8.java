@@ -15,7 +15,6 @@ public class Ejer8 {
 		String usuario = "";
 		String contra = "";
 		String contraUsuario = "";
-		String usuarioUsuario = "";
 		// Creamos un while para el menú
 		while (opcion != 0) {
 			// Si escribe 1, solicitamos los datos y los almacenamos en el mapa
@@ -28,11 +27,11 @@ public class Ejer8 {
 			}
 			// Si introduce 2, solicitamos usuario y contraseña, si falla 3 veces no accede
 			if (opcion == 2) {
-				while (cont <= 3 && !baseDatos.containsValue(contraUsuario) && !baseDatos.containsKey(usuarioUsuario)) {
+				while (cont <= 3 && baseDatos.get(contra) != contraUsuario) {
 
 					System.out.println("Si falla 3 veces se le denegará el acceso");
 					System.out.println("Usuario:");
-					usuarioUsuario = sc.next();
+					usuario = sc.next();
 					System.out.println("Contraseña:");
 					contraUsuario = sc.next();
 					cont++;
