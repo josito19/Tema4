@@ -1,15 +1,15 @@
 package colecciones1;
 
-import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.TreeSet;
 
-public class Ejer5 {
+public class Ejer6 {
 
 	public static void main(String[] args) {
 		// Creamos el escáner
 		Scanner sc = new Scanner(System.in);
 		// Creamos el conjunto ya que no pueden repetirse datos
-		LinkedHashSet<String> conjNombres = new LinkedHashSet<String>();
+		TreeSet<String> conjNombres = new TreeSet<String>();
 		// Creamos la variable donde almacenar los nombre momentaneamente
 		String nombre = "";
 
@@ -22,6 +22,7 @@ public class Ejer5 {
 		conjNombres.remove("");
 		System.out.println(conjNombres);
 		sc.close();
+
 	}
 
 }
